@@ -10,9 +10,27 @@ package main;
  * @author Jess
  */
 public class ComplaintController {
+    
+    private User user;
+    private String complaint = "";
+    private int compNum = 0;
+    private int printNum = 0;
+    
     //constructor
     ComplaintController(){
         
+    }
+    
+    private String viewComplaint(){
+        return complaint;
+    }
+    
+    public int printComplaint(){
+        return printNum;
+    }
+    
+    public int closeComplaint(User user){
+        return compNum;
     }
     
 }

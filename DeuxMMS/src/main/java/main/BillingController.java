@@ -10,8 +10,22 @@ package main;
  * @author Jess
  */
 public class BillingController {
+    
+    private User user;
+    private String confirm = "";
+    private boolean status = false;
+    
     //constructor
     public BillingController(){
         
+    }
+    
+    private String editBilling(User user){
+        this.user = user;
+        return confirm;
+    }
+    
+    private boolean authenticateBillingEdits(){
+        return status;
     }
 }

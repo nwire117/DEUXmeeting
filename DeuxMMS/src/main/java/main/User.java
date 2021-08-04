@@ -10,8 +10,27 @@ package main;
  * @author Jess
  */
 public class User {
+    
+    private String email = "";
+    private String nameFirst = "";
+    private String nameLast = "";
+    private String phone = "";
+    private String user = "";
+    private char type = 'B';
+    
     //constructor
     public User(){
         
+    }
+    
+    public String getUserType(char type){
+        this.type = type;
+        
+        if(this.type == 'A')
+            this.user = "Administrator";
+        else
+            this.user = "Customer";
+        
+        return user;
     }
 }

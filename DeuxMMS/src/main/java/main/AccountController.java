@@ -11,8 +11,20 @@ package main;
  */
 public class AccountController {
     
+    private User user;
+    private String confirm = "Your account has been successfully created.";
+    private boolean status = false;
+    
    //constructor
     public AccountController(){
         
+    }
+    
+    public String createAccount(User user){
+        return confirm;
+    }
+    
+    private boolean authenticateAccount(){
+        return status;
     }
 }
