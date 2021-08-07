@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+
 <html style="font-size: 16px;">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,16 +42,16 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Edit-Profile.html">Edit Profile</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Log-Out.html">Log Out</a>
+            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Edit-Profile.jsp">Edit Profile</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Log-Out.jsp">Log Out</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Edit-Profile.html">Edit Profile</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Log-Out.html">Log Out</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Edit-Profile.jsp">Edit Profile</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Log-Out.jsp">Log Out</a>
 </li></ul>
               </div>
             </div>
@@ -112,7 +115,7 @@
 </g></svg></span>
                       <h3 class="u-custom-font u-font-pt-sans u-text u-text-body-color u-text-default u-text-7">File Complaint</h3>
                       <div class="u-form u-form-1">
-                        <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
+                        <form action="complaint" method="post" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
                           <div class="u-form-group u-form-name">
                             <label for="name-94df" class="u-form-control-hidden u-label"></label>
                             <input type="text" placeholder="Enter your Name" id="name-94df" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
@@ -129,7 +132,7 @@
                             <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
                             <input type="submit" value="submit" class="u-form-control-hidden">
                           </div>
-                          <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                          <div class="u-form-send-success u-form-send-message"> Thank you! Your message has been sent. </div>
                           <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
                           <input type="hidden" value="" name="recaptchaResponse">
                         </form>

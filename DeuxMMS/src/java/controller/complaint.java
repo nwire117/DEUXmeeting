@@ -16,25 +16,18 @@ import jakarta.servlet.http.HttpServletResponse;
  *
  * @author Jess
  */
-public class login extends HttpServlet {
+public class complaint extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String _username = request.getParameter("username");
-        String _password = request.getParameter("password");
+        String _name = request.getParameter("name");
+        String _email = request.getParameter("email");
+        String _message = request.getParameter("message");
         
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            if(_username != null && _password != null){
-                if(_username.equals("admin") && _password.equals("admin")){
-                    response.sendRedirect("Admin-Dashboard.jsp");
-                }
-                else
-                    response.sendRedirect("User-Dashboard.jsp");
-            }
-            else
-                out.println("Empty username or password field");
-
+            //store complaint into database here
+            out.println("Thank you come again!");
         }
     }
 
@@ -49,5 +42,4 @@ public class login extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
     }
-
 }

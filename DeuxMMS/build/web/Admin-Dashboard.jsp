@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+
 <html style="font-size: 16px;">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Strategic Planning, We are committed expert partners, Benefits of working with us​, 01, 02, 03, 04, 05, 06, About Us, Simple, Transparent Pricing, It's Free!">
+    <meta name="keywords" content="Strategic Planning, We are committed expert partners, Benefits of working with usâ, 01, 02, 03, 04, 05, 06, About Us, Simple, Transparent Pricing, It's Free!">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Admin Dashboard</title>
@@ -72,7 +75,7 @@
 </g></svg></span>
                       <h3 class="u-custom-font u-font-pt-sans u-text u-text-body-color u-text-3">Create Room</h3>
                       <div class="u-form u-form-1">
-                        <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form-2" style="padding: 10px;">
+                        <form action="#" method="post" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form-2" style="padding: 10px;">
                           <div class="u-form-group u-form-select u-form-group-1">
                             <label for="select-4892" class="u-form-control-hidden u-label"></label>
                             <div class="u-form-select-wrapper">
@@ -92,8 +95,6 @@
                             <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
                             <input type="submit" value="submit" class="u-form-control-hidden">
                           </div>
-                          <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-                          <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
                           <input type="hidden" value="" name="recaptchaResponse">
                         </form>
                       </div>
@@ -105,7 +106,7 @@
 </g></svg></span>
                       <h3 class="u-custom-font u-font-pt-sans u-text u-text-body-color u-text-4">Display Meetings</h3>
                       <div class="u-expanded-width u-form u-form-2">
-                        <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form-4" style="padding: 10px;">
+                        <form action="meeting" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form-4" style="padding: 10px;">
                           <div class="u-form-group u-form-select u-form-group-4">
                             <label for="select-7aa9" class="u-form-control-hidden u-label"></label>
                             <div class="u-form-select-wrapper">
@@ -172,14 +173,14 @@
                     <div class="u-container-layout u-container-layout-4"><span class="u-icon u-icon-circle u-text-body-color u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 511.99981 511" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6ff4"></use></svg><svg class="u-svg-content" viewBox="0 0 511.99981 511" id="svg-6ff4"><path d="m296.464844 336.097656c-12.519532-8.734375-25.898438-15.851562-39.890625-21.289062 18.613281-16.917969 30.960937-40.617188 33.109375-67.148438 28.226562-27.503906 65.226562-42.582031 104.890625-42.582031 30.964843 0 60.695312 9.324219 85.984375 26.960937 9.0625 6.320313 21.523437 4.101563 27.84375-4.960937 6.316406-9.058594 4.097656-21.523437-4.960938-27.839844-12.519531-8.734375-25.902344-15.847656-39.894531-21.289062 20.539063-18.667969 33.453125-45.585938 33.453125-75.460938 0-56.238281-45.75-101.988281-101.988281-101.988281-56.234375 0-101.984375 45.75-101.984375 101.988281 0 29.753907 12.808594 56.574219 33.207031 75.234375-2.792969 1.074219-5.570313 2.210938-8.320313 3.421875-12.515624 5.507813-24.28125 12.28125-35.222656 20.234375-15.089844-37.488281-51.828125-64.019531-94.652344-64.019531-56.234374 0-101.988281 45.75-101.988281 101.984375 0 29.671875 12.738281 56.417969 33.027344 75.070312-54.246094 20.324219-98.230469 63.976563-116.136719 119.648438-5.9375 18.460938-2.792968 38.039062 8.628906 53.714844 11.421876 15.671875 29.09375 24.660156 48.484376 24.660156h173.980468c11.042969 0 19.996094-8.953125 19.996094-20 0-11.042969-8.953125-19.996094-19.996094-19.996094h-173.980468c-6.464844 0-12.355469-2.996094-16.164063-8.222656s-4.855469-11.753906-2.878906-17.910156c19.765625-61.453125 80.046875-104.371094 146.589843-104.371094 30.960938 0 60.695313 9.324219 85.984376 26.960938 9.058593 6.320312 21.523437 4.097656 27.84375-4.960938 6.316406-9.058594 4.097656-21.523438-4.964844-27.839844zm98.546875-295.601562c34.183593 0 61.992187 27.808594 61.992187 61.992187 0 34.179688-27.808594 61.992188-61.992187 61.992188-34.179688 0-61.992188-27.8125-61.992188-61.992188 0-34.183593 27.8125-61.992187 61.992188-61.992187zm-206.972657 136.855468c34.183594 0 61.992188 27.8125 61.992188 61.992188 0 34.183594-27.808594 61.992188-61.992188 61.992188-34.183593 0-61.992187-27.808594-61.992187-61.992188 0-34.179688 27.808594-61.992188 61.992187-61.992188zm323.960938 240.097657c0 11.042969-8.953125 19.996093-20 19.996093h-54.992188v54.992188c0 11.046875-8.953124 20-19.996093 20-11.046875 0-20-8.953125-20-20v-54.992188h-54.992188c-11.042969 0-19.996093-8.953124-19.996093-19.996093 0-11.046875 8.953124-20 19.996093-20h54.992188v-54.992188c0-11.042969 8.953125-19.996093 20-19.996093 11.042969 0 19.996093 8.953124 19.996093 19.996093v54.992188h54.992188c11.046875 0 20 8.953125 20 20zm0 0"></path></svg></span>
                       <h3 class="u-custom-font u-font-pt-sans u-text u-text-body-color u-text-6">Create New Admin</h3>
                       <div class="u-expanded-width u-form u-form-4">
-                        <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form-1" style="padding: 10px;">
+                        <form action="admin" method="post" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form-1" style="padding: 10px;">
                           <div class="u-form-group u-form-name">
                             <label for="name-a6ff" class="u-form-control-hidden u-label"></label>
                             <input type="text" placeholder="Name" id="name-a6ff" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
                           </div>
                           <div class="u-form-email u-form-group">
                             <label for="email-a6ff" class="u-form-control-hidden u-label"></label>
-                            <input type="email" placeholder="Enter a valid email address" id="email-a6ff" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                            <input type="text" placeholder="Enter a valid email address" id="email-a6ff" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
                           </div>
                           <div class="u-form-group u-form-group-12">
                             <label for="text-3922" class="u-form-control-hidden u-label"></label>
@@ -187,14 +188,12 @@
                           </div>
                           <div class="u-form-group u-form-group-13">
                             <label for="text-d133" class="u-form-control-hidden u-label"></label>
-                            <input type="text" placeholder="Confirm Password" id="text-d133" name="text-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                            <input type="text" placeholder="Confirm Password" id="text-d133" name="text1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
                           </div>
                           <div class="u-align-center u-form-group u-form-submit">
                             <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
                             <input type="submit" value="submit" class="u-form-control-hidden">
                           </div>
-                          <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-                          <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
                           <input type="hidden" value="" name="recaptchaResponse">
                         </form>
                       </div>
