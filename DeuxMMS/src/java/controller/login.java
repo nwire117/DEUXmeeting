@@ -12,30 +12,42 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+
 /**
  *
  * @author Jess
  */
 public class login extends HttpServlet {
-
+    
+    //LoginModel lm = new LoginModel();
+    public login(){
+        
+    }
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String _username = request.getParameter("username");
         String _password = request.getParameter("password");
         
+        //String type = lm.confirmLogin(_username, _password);
+        
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             if(_username != null && _password != null){
-                if(_username.equals("admin") && _password.equals("admin")){
-                    response.sendRedirect("Admin-Dashboard.jsp");
+                response.sendRedirect("Admin-Dashboard.jsp");
+                //if(type.equals("A")){
+                //    response.sendRedirect("Admin-Dashboard.jsp");
+               // }
+                //else if(type.equals("C")){
+                    //response.sendRedirect("User-Dashboard.jsp");
                 }
                 else
-                    response.sendRedirect("User-Dashboard.jsp");
+                    response.sendRedirect("index.jsp");
             }
-            else
-                out.println("Empty username or password field");
+            //else
+                //out.println("Empty username or password field");
 
-        }
+        //}
     }
 
     @Override

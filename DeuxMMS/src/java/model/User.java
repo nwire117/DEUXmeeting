@@ -29,7 +29,7 @@ public class User {
         if(this.type == 'A')
             this.user = "Administrator";
         else
-            this.user = "Customer";
+            this.user = "Client";
         
         return user;
     }
